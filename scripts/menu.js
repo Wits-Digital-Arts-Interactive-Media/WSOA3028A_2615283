@@ -8,6 +8,13 @@ const menuItems = [
     {name: "Essays", href: `${root}essays/index.html`},
 ]
 
+const blogPosts = [
+    {name: "Blog-1"},
+    {name: "Blog-2"},
+    {name: "Blog-3"},
+    {name: "Blog-4"},
+]
+
 export function Initialize(currentPage) {
     const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")

@@ -8,19 +8,15 @@
     <meta name="keywords" content="Blogs, Dev-Blogs">
     <!--<meta name="robots" content="">-->
     <title>Week 1 Blog Post</title>
+    <script type = "module">import { Initialize } from "../scripts/menu.js"
+        Initialize("Blog-1")</script>
+    <script src = "../scripts/scroll-to-top.js"></script>
 </head>
 <body>
     <header>
         Christine's Web Page    
         <nav>
-            <ul>
-                <li><a href="../index.html">Home Page</a></li>
-                <li><a href="../portfolio/portfolio.html">Portfolio Page</a></li>
-                <li><a href="../profile/profile.html">Profile Page</a></li>
-                <li><a href="../designs/design.html">Design Page</a></li>
-                <li><a href="blogs.html">Blogs Page</a></li>
-                <li><a href="../essays/essays.html">Essays Page</a></li>            
-            </ul>
+            
         </nav>
     </header>
         <main>
@@ -111,6 +107,7 @@
                     <a href="blog2.html">Next Blog</a>
                 </article>
             </section>
-        </nav>    
+        </nav>   
+        <button onclick="scrollToTop()">Back to Top</button> 
 </body>
 </html>
