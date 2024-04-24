@@ -25,4 +25,3 @@ export function Initialize(currentPage) {
     }
     nav.appendChild(ul)    
 }
-console.log("hi")
