@@ -1,7 +1,5 @@
-const root = "/WSOA3028A_2615283"
-
 const menuItems = [
-    {name: "Home", href: `../index.html`},
+    {name: "Home", href: `../profile/index.html`},
     {name: "Portfolio", href: `../portfolio/index.html`},
     {name: "Profile", href: `../profile/index.html`},
     {name: "Designs", href: `../designs/index.html`},
