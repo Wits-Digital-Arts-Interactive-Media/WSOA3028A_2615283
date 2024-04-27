@@ -13,6 +13,10 @@ const blogPosts = [
     {name: "Blog-2"},
     {name: "Blog-3"},
     {name: "Blog-4"},
+    {name: "Blog-5"},
+    {name: "Blog-6"},
+    {name: "Blog-7"},
+    {name: "Blog-8"},
 ]
 
 export function Initialize(currentPage) {
