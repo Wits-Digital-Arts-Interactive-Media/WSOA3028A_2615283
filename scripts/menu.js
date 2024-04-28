@@ -8,7 +8,7 @@ const menuItems = [
     {name: "Essays", href: `${root}essays/index.html`},
 ]
 
-const blogPosts = [
+const blogPostsAndEssays = [
     {name: "Blog-1"},
     {name: "Blog-2"},
     {name: "Blog-3"},
@@ -17,6 +17,7 @@ const blogPosts = [
     {name: "Blog-6"},
     {name: "Blog-7"},
     {name: "Blog-8"},
+    {name: "Essay-1"},
 ]
 
 export function Initialize(currentPage) {
