@@ -5,14 +5,14 @@ const pages = [
 ]
 
 const blogs = [
-    {name: "Blog-Post-1", href: `${root}blog1.html`},
-    {name: "Blog-Post-2", href: `${root}blog2.html`},
-    {name: "Blog-Post-3", href: `${root}blog3.html`},
-    {name: "Blog-Post-4", href: `${root}blog4.html`},
-    {name: "Blog-Post-5", href: `${root}blog5.html`},
-    {name: "Blog-Post-6", href: `${root}blog6.html`},
-    {name: "Blog-Post-7", href: `${root}blog7.html`},
-    {name: "Blog-Post-8", href: `${root}blog8.html`},
+    {name: "Blog-Post-1", href: `${root}blogs/blog1.html`},
+    {name: "Blog-Post-2", href: `${root}blogs/blog2.html`},
+    {name: "Blog-Post-3", href: `${root}blogs/blog3.html`},
+    {name: "Blog-Post-4", href: `${root}blogs/blog4.html`},
+    {name: "Blog-Post-5", href: `${root}blogs/blog5.html`},
+    {name: "Blog-Post-6", href: `${root}blogs/blog6.html`},
+    {name: "Blog-Post-7", href: `${root}blogs/blog7.html`},
+    {name: "Blog-Post-8", href: `${root}blogs/blog8.html`},
 ]
 
 export function recentPosts() {
