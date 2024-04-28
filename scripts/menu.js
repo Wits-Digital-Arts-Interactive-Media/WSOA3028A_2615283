@@ -18,6 +18,11 @@ const blogPostsAndEssays = [
     {name: "Blog-7"},
     {name: "Blog-8"},
     {name: "Essay-1"},
+    {name: "Design-Log-1"},
+    {name: "Design-Log-2"},
+    {name: "Design-Log-3"},
+    {name: "Design-Log-4"},
+    {name: "Design-Log-5"},
 ]
 
 export function initialize(currentPage) {
