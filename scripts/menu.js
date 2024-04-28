@@ -20,7 +20,7 @@ const blogPostsAndEssays = [
     {name: "Essay-1"},
 ]
 
-export function Initialize(currentPage) {
+export function initialize(currentPage) {
     const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")
     for (let menuItem of menuItems) {
