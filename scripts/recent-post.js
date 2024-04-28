@@ -1,9 +1,5 @@
 const root =  "/WSOA3028A_2615283/"
 
-const pages = [
-    {name: "Home", href: `${root}index.html`}
-]
-
 const blogs = [
     {name: "Blog-Post-1", href: `${root}blogs/blog1.html`},
     {name: "Blog-Post-2", href: `${root}blogs/blog2.html`},
@@ -16,7 +12,7 @@ const blogs = [
 ]
 
 export function recentPosts() {
-    const name = document.querySelector("main > h3")
+    const name = document.getElementById("Blog-Heading")
     const a = document.createElement ("a")
     a.innerText = blogs[blogs.length - 1].name
     a.setAttribute("href", blogs[blogs.length - 1].href)      
