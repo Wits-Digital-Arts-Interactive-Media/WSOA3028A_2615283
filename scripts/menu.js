@@ -9,6 +9,7 @@ const menuItems = [
 ]
 
 const blogPostsAndEssays = [
+    {name: "Dev-Log"},
     {name: "Blog-1"},
     {name: "Blog-2"},
     {name: "Blog-3"},
@@ -17,6 +18,7 @@ const blogPostsAndEssays = [
     {name: "Blog-6"},
     {name: "Blog-7"},
     {name: "Blog-8"},
+    {name: "Blog-9"},
     {name: "Essay-1"},
     {name: "Design-Log-1"},
     {name: "Design-Log-2"},

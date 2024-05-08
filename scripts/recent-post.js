@@ -9,6 +9,7 @@ const blogs = [
     {name: "Blog-Post-6", href: `${root}blogs/blog6.html`},
     {name: "Blog-Post-7", href: `${root}blogs/blog7.html`},
     {name: "Blog-Post-8", href: `${root}blogs/blog8.html`},
+    {name: "Blog-Post-9", href: `${root}blogs/blog9.html`},
 ]
 
 export function recentPosts() {
