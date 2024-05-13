@@ -1,30 +1,94 @@
 body {
     background-color: black;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+}
+
+main {
+    margin-top: 4em;
+} 
+
+.websiteHeader {
+    display: block;
+    float: left;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 42px;
+}
+
+#mainNav a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+#mainNav a:hover {
+    background: #85858586;
+    color: black;
+}
+
+#homeButton {
+    background-color: #92e0c8;
+    color: black;
+}
+
+#otherButton {
+    color: white;
+}
+
+/*#websiteName {
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
     position: fixed; 
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 20%;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav a {
-    float: left;
+#mainNav {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 80%;
+}
+
+#mainNav a {
+    float: right;
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
-nav a:hover {
-    background: #ddd;
+#mainNav a:hover {
+    background: #858585;
     color: black;
 }
-  
-main {
-    margin-top: 30px;
-} 
+
+#homeButton {
+    background-color: #92e0c8;
+    color: black;
+}
+
+#otherButton {
+    color: white;
+}*/

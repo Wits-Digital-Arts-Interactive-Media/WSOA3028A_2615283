@@ -1,11 +1,11 @@
 const root =  "/WSOA3028A_2615283/"
 const menuItems = [
-    {name: "Home", href: `${root}index.html`},
-    {name: "Portfolio", href: `${root}portfolio/index.html`},
-    {name: "Profile", href: `${root}profile/index.html`},
-    {name: "Designs", href: `${root}designs/index.html`},
-    {name: "Blogs", href: `${root}blogs/index.html`},
-    {name: "Essays", href: `${root}essays/index.html`},
+    {name: "ESSAYS", href: `${root}essays/index.html`},
+    {name: "BLOGS", href: `${root}blogs/index.html`},
+    {name: "DESIGNS", href: `${root}designs/index.html`},
+    {name: "PROFILE", href: `${root}profile/index.html`},
+    {name: "PORTFOLIO", href: `${root}portfolio/index.html`},
+    {name: "HOME", href: `${root}index.html`},    
 ]
 
 const blogPostsAndEssays = [
@@ -40,5 +40,9 @@ export function initialize(currentPage) {
             a.innerText = menuItem.name
             nav.appendChild(a)
         }
+        if (a.innerText == menuItems[5].name) {
+            a.setAttribute("id", "homeButton")
+        }
+        else (a.setAttribute("id", "otherButton"))
     }
 }
