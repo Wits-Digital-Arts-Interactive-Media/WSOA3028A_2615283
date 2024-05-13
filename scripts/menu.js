@@ -29,17 +29,16 @@ const blogPostsAndEssays = [
 
 export function initialize(currentPage) {
     const nav = document.querySelector("header > nav")
-    const ul = document.createElement("ul")
     for (let menuItem of menuItems) {
-        const li = document.createElement("li")
+        const a = document.createElement("a")
         if (currentPage != menuItem.name) {
-            const a = document.createElement ("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            li.appendChild(a)
+            nav.appendChild(a)
         }
-        else (li.innerText = menuItem.name)       
-        ul.appendChild(li)        
+        else if (currentPage == menuItem.name) {
+            a.innerText = menuItem.name
+            nav.appendChild(a)
+        }
     }
-    nav.appendChild(ul)    
 }
