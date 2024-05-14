@@ -23,7 +23,7 @@ main {
     float: left;
     line-height: 1;
     text-decoration: none;
-    font-size: 42px;
+    font-size: 40px;
 }
 
 #mainNav a{
@@ -48,47 +48,49 @@ main {
     color: white;
 }
 
-/*#websiteName {
-    overflow: hidden;
-    background-color: white;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 20%;
-    float: right;
+#post {
+    margin-right: auto;
+    margin-left: auto;
     display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#mainNav {
-    overflow: hidden;
-    background-color: white;
-    position: fixed; 
-    top: 0;
-    right: 0;
-    width: 80%;
-}
-
-#mainNav a {
-    float: right;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-#mainNav a:hover {
-    background: #858585;
-    color: black;
-}
-
-#homeButton {
-    background-color: #92e0c8;
-    color: black;
-}
-
-#otherButton {
+    text-align: left;
+    background-color: black;
     color: white;
-}*/
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    width: fit-content;
+}
+
+#postEntry {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    text-align: left;
+    width: 70%;
+    background-color: white;
+    color: black;
+    padding: 1em 1em;
+}
+
+#blogImage {
+    display: block;
+    width: 70%;
+}
+
+.wireframeRow {
+    display: flex;
+}
+
+.wireframeImage {
+    flex: 50%;
+    padding: 5px;
+}
+
+#wireframe {
+    display: block;
+    width: 100%;
+}
+
+#styleGuide {
+    display: block;
+    width: 100%;
+}
