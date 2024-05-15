@@ -1,7 +1,7 @@
 function mouseOver(element) {
-    element.style.fontSize = "175%"
+    element.style.fontSize = "150%"
 }
 
 function mouseOut(element) {
-    element.style.fontSize = "150%"
+    element.style.fontSize = "100%"
 }

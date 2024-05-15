@@ -48,7 +48,7 @@ main {
     color: white;
 }
 
-#post {
+h1 {
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -56,7 +56,6 @@ main {
     background-color: black;
     color: white;
     padding: 0.5em 0.5em;
-    text-decoration: none;
     width: fit-content;
 }
 
@@ -93,4 +92,41 @@ main {
 #styleGuide {
     display: block;
     width: 100%;
+}
+
+#Blog-Post-1-Link, #Blog-Post-4-Link, #Blog-Post-7-Link, #Log-1-Link, #Log-4-Link{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    display: block;
+    background-color: #92e0c8;
+    color: black;
+    width: 90%;    
+    padding: 0.05em 1em;
+}
+
+#Blog-Post-2-Link, #Blog-Post-5-Link, #Blog-Post-8-Link, #Log-2-Link, #Log-5-Link{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    display: block;
+    background-color: white;
+    color: black;
+    width: 90%;    
+    padding: 0.05em 1em;
+}
+
+#Blog-Post-3-Link, #Blog-Post-6-Link, #Blog-Post-9-Link, #Log-3-Link{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    display: block;
+    background-color: #174a43;
+    color: white;
+    width: 90%;    
+    padding: 0.05em 1em;
+}
+
+#link {
+    text-decoration: none;
 }
