@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif    
 }
 
 header {
@@ -42,13 +42,15 @@ main {
 #homeButton {
     background-color: #92e0c8;
     color: black;
+    cursor: pointer;
 }
 
 #otherButton {
     color: white;
+    cursor: pointer;
 }
 
-h1 {
+h1, #homepageRecentActivitiesHeading {
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -75,7 +77,7 @@ h1 {
     width: 70%;
 }
 
-.wireframeRow {
+.wireframeImageRow {
     display: flex;
 }
 
@@ -103,6 +105,7 @@ h1 {
     color: black;
     width: 90%;    
     padding: 0.05em 1em;
+    cursor: pointer;
 }
 
 #Blog-Post-2-Link, #Blog-Post-5-Link, #Blog-Post-8-Link, #Log-2-Link, #Log-5-Link{
@@ -114,6 +117,7 @@ h1 {
     color: black;
     width: 90%;    
     padding: 0.05em 1em;
+    cursor: pointer;
 }
 
 #Blog-Post-3-Link, #Blog-Post-6-Link, #Blog-Post-9-Link, #Log-3-Link{
@@ -125,8 +129,114 @@ h1 {
     color: white;
     width: 90%;    
     padding: 0.05em 1em;
+    cursor: pointer;
 }
 
 #link {
     text-decoration: none;
+}
+
+.entry-title {
+    text-decoration: none;
+}
+
+.homepageProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.illustration {
+    flex: 1;
+    width: 45%;
+}
+
+.biographyHome {
+    flex: 1;
+    background-color: #92e0c8;
+    color: black;
+    padding: 2em 2em;
+    line-height: 1.7;
+    height: 50%;
+}
+
+.arrow {
+    cursor: pointer;
+    -webkit-transform: rotate(135deg);
+    margin: 50px 20px;
+    width: 50px;
+    height: 50px; 
+    float: right;
+    background: #92e0c8;
+    transition: 0.5s;
+}
+
+.arrow:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+.arrow:hover {
+    transform: translateX(10px) rotate(135deg);
+}
+
+.activityRow {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.activityItem {
+    flex: 33%;
+    padding: 2em 2em;
+    margin: 1em;
+    background-color: white;
+}
+
+.activityItem h3 {
+    text-align: center;
+}
+
+#activityItem1 {
+    background-color: #174a43;
+    color: white;
+    text-decoration: none;
+}
+
+#activityItem1:hover {
+    background-color: #032d27;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+  }
+
+#activityItem2 {
+    background-color: #92e0c8;
+    color: black;
+    text-decoration: none;
+}
+
+#activityItem2:hover {
+    background-color: #4a9780;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+#activityItem3 {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+#activityItem3:hover {
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
 }

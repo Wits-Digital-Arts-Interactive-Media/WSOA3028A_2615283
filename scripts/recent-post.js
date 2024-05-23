@@ -15,8 +15,10 @@ const blogs = [
 export function recentPosts() {
     const name = document.getElementById("Blog-Heading")
     const a = document.createElement ("a")
-    a.innerText = blogs[blogs.length - 1].name
-    a.setAttribute("href", blogs[blogs.length - 1].href)      
+    a.innerText = blogs[blogs.length - 1].name    
     name.appendChild(a)    
 }
 
+document.getElementById('activityItem1').addEventListener('click', function() {
+    location.href = blogs[blogs.length - 1].href
+}, false);

@@ -7,7 +7,10 @@ const essays = [
 export function recentEssay() {
     const name = document.getElementById("Essay-Heading")
     const a = document.createElement ("a")
-    a.innerText = essays[essays.length - 1].name
-    a.setAttribute("href", essays[essays.length - 1].href)      
+    a.innerText = essays[essays.length - 1].name    
     name.appendChild(a)    
 }
+
+document.getElementById('activityItem2').addEventListener('click', function() {
+    location.href = essays[essays.length - 1].href
+}, false);
