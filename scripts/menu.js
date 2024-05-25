@@ -34,15 +34,14 @@ export function initialize(currentPage) {
         if (currentPage != menuItem.name) {
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
+            a.setAttribute("id", "otherButton")
             nav.appendChild(a)
         }
         else if (currentPage == menuItem.name) {
             a.innerText = menuItem.name
+            a.setAttribute("id", "currentButton")
             nav.appendChild(a)
         }
-        if (a.innerText == menuItems[5].name) {
-            a.setAttribute("id", "homeButton")
-        }
-        else (a.setAttribute("id", "otherButton"))
     }
 }
+

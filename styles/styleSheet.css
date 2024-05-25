@@ -1,4 +1,6 @@
 body {
+    position: relative;
+    min-height: 100vh;
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif    
@@ -16,7 +18,15 @@ header {
 
 main {
     margin-top: 4em;
+    padding-bottom: 2.5rem;
 } 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
 
 .websiteHeader {
     display: block;
@@ -39,7 +49,7 @@ main {
     color: black;
 }
 
-#homeButton {
+#currentButton {
     background-color: #92e0c8;
     color: black;
     cursor: pointer;
@@ -198,7 +208,6 @@ h1, #homepageRecentActivitiesHeading {
     flex: 33%;
     padding: 2em 2em;
     margin: 1em;
-    background-color: white;
 }
 
 .activityItem h3 {
@@ -240,3 +249,27 @@ h1, #homepageRecentActivitiesHeading {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
 }
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footerItem {
+    flex: 33%;
+    padding: 0.5em 0.5em;
+    margin: 1em;
+    background-color: #174a43;
+    text-align: center;
+    color: white;
+}
+
+.footerItem:hover {
+    background-color: #032d27;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
