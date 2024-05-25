@@ -208,9 +208,6 @@ h1, #homepageRecentActivitiesHeading {
     flex: 33%;
     padding: 2em 2em;
     margin: 1em;
-}
-
-.activityItem h3 {
     text-align: center;
 }
 
@@ -258,6 +255,11 @@ h1, #homepageRecentActivitiesHeading {
     margin-left: auto;
 }
 
+footer h3 {
+    text-align: center;
+    color: #92e0c8;
+}
+
 .footerItem {
     flex: 33%;
     padding: 0.5em 0.5em;
@@ -273,3 +275,59 @@ h1, #homepageRecentActivitiesHeading {
     transition: background-color 0.5s ease-out;
 }
 
+.illustrationProfile {
+    display: flex;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h-card {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 0.5em;
+}
+
+#cvHeader {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#cv {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cvPart1 {
+    flex: 1;
+    background-color: white;
+    color: black;
+    margin-right: 2em;
+    padding: 0.5em 0.5em;
+}
+
+#cvPart2 {
+    flex: 1;
+    background-color: white;
+    color: black;
+    padding: 0.5em 0.5em;
+}
+
+#year {
+    color: #174a43;
+}
+
+#details {
+    color: black;    
+}
+
+#reference {
+    text-align: 2em;
+}
