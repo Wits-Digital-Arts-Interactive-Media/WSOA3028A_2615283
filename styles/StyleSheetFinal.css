@@ -81,6 +81,7 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0em 1em;
+    line-height: 1.7;
 }
 
 h1, h2 {
@@ -407,7 +408,7 @@ footer h3 {
 }
 
 .entry-content {
-    flex-basis: 80%;
+    flex-basis: 70%;
     background-color: white;
     color: black;
     padding: 1.5em 1.5em;
@@ -428,6 +429,80 @@ footer h3 {
 
 #wireframe {
     width: 100%;
+}
+
+#portfolioScreeshot {
+    flex: 1 30%;
+    width: 100%;
+    padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.Navigation-Buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Back-to-Blogs {
+    flex: 1 100%;
+    background-color: #92e0c8;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.Back-to-Blogs:hover {
+    background-color: #4a9780;
+    transition: scale 0.5s ease-out;
+}
+
+#blogs {    
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;    
+}
+
+.Next-Or-Previous-Blog {
+    display: flex;
+    width: 100%;
+}
+
+#previous {
+    flex: 1;
+    background-color: #174a43;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    margin-right: 0.25em;
+    text-align: center;
+}
+
+#previous:hover {
+    background-color: #032d27;
+    transition: scale 0.5s ease-out;
+}
+
+#next {
+    flex: 1;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    margin-left: 0.25em;
+    text-align: center;
+}
+
+#next:hover {
+    background-color: rgb(189, 189, 189);
+    transition: scale 0.5s ease-out;
 }
 
 @media screen and (max-width: 1040px) {
@@ -559,6 +634,18 @@ footer h3 {
     }
 
     .wireframeImage {
+        flex: 1 100%;
+    }
+
+    .Navigation-Buttons {
+        width: 100%;
+    }
+
+    #previous {
+        flex: 1 100%;
+    }
+    
+    #next {
         flex: 1 100%;
     }
 }
