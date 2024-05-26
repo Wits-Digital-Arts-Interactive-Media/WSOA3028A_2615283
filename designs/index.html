@@ -12,53 +12,38 @@
         initialize("DESIGNS") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
-    <script src="../scripts/onMouseOver.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+        smallMenu("PORTFOLIO") </script>
+    <script type="module"> import { designsIndex } from "../scripts/designEntries.js" 
+        designsIndex() </script>
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
 <header><div class="websiteHeader">CHRISTINE HOLT</div>   
     <nav id="mainNav">
-
+        <div id="navLinks">
+        </div>
+        <div id="offScreenMenu"> 
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
     </nav>
+    <script src="../scripts/hamburger.js"></script>
 </header>
     <main>
-        <section class="Design-And-Style-Guide">
-            <h1>Design Index</h1>
-            <a href = "log1.html" id="link">
-            <article class = "h-entry" id = "Log-1-Link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-                <h2 class = "entry-title">Design Log 1</h2>
-                <p class = "enrty-summary">In this log I speak about my goal alignment, my information structure and my user flow.</p>
-            </article>
-            </a>
-            <a href = "log2.html" id="link">
-            <article class = "h-entry" id = "Log-2-Link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-                <h2 class = "entry-title">Design Log 2</h2>
-                <p class = "enrty-summary">In this log I Speak a little on some of the websites that inspires me, and here are some notes on my visual aesthetics and some possible visual design elements.</p>
-            </article>
-            </a>
-            <a href = "log3.html" id="link">
-            <article class = "h-entry" id = "Log-3-Link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-                <h2 class = "entry-title">Design Log 3</h2>
-                <p class = "enrty-summary">My initial wireframes and colour blockouts can be found here.</p>
-            </article>
-            </a>
-            <a href = "log4.html" id="link">
-            <article class = "h-entry" id = "Log-4-Link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-                <h2 class = "entry-title">Design Log 4</h2>
-                <p class = "enrty-summary">Here I talk about my interface elements and my style guide can be found here.</p>
-            </article>
-            </a>
-            <a href = "log5.html" id="link">
-            <article class = "h-entry" id = "Log-5-Link" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
-                <h2 class = "entry-title">Design Log 5</h2>
-                <p class = "enrty-summary">Here are my final design sketches in the form of wireframes and colour blockouts.</p>
-            </article>           
-            </a> 
-        </section>
+        <div class = "firstContentWrapper">
+            <section class="Design-And-Style-Guide" id="designLinks">
+                <h1>Design Index</h1>
+            
+            </section>
+        </div>
     </main>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

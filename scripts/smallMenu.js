@@ -1,11 +1,11 @@
 const root =  "/WSOA3028A_2615283/"
-const menuItems = [
-    {name: "ESSAYS", href: `${root}essays/index.html`},
-    {name: "BLOGS", href: `${root}blogs/index.html`},
-    {name: "DESIGNS", href: `${root}designs/index.html`},
+const menuItems = [    
+    {name: "HOME", href: `${root}index.html`},
+    {name: "PORTFOLIO", href: `${root}portfolio/index.html`},    
     {name: "PROFILE", href: `${root}profile/index.html`},
-    {name: "PORTFOLIO", href: `${root}portfolio/index.html`},
-    {name: "HOME", href: `${root}index.html`},    
+    {name: "DESIGNS", href: `${root}designs/index.html`},
+    {name: "BLOGS", href: `${root}blogs/index.html`},
+    {name: "ESSAYS", href: `${root}essays/index.html`},
 ]
 
 const blogPostsAndEssays = [
@@ -35,12 +35,14 @@ export function smallMenu(currentPage) {
         if (currentPage != menuItem.name) {
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            a.setAttribute("id", "smallMenuName")
+            a.setAttribute("class", "smallMenuItem")
+            a.setAttribute("id", "other")
             nav.appendChild(a)
         }
         else if (currentPage == menuItem.name) {
             a.innerText = menuItem.name
-            a.setAttribute("id", "smallMenuName")
+            a.setAttribute("class", "smallMenuItem")
+            a.setAttribute("id", "current")
             nav.appendChild(a)
         }
     }

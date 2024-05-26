@@ -63,8 +63,15 @@ header {
     right: 0;
 }
 
-#smallMenuName {
-    margin: 1px;
+.smallMenuItem {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#other:hover {
+    color: rgb(139, 139, 139);
+    transition: background-color 0.2s ease-out;
 }
 
 body {
@@ -74,6 +81,15 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0em 1em;
+}
+
+h1, h2 {
+    flex: 1 100%;
+    text-align: center;
+}
+
+#link {
+    text-decoration: none;
 }
 
 main {
@@ -90,6 +106,39 @@ footer {
     height: 2.5rem;
 }
 
+footer h3 {
+    text-align: center;
+}
+
+.footerLinks {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerItem {
+    flex: 1;
+    background-color: #174a43;
+    text-align: center;
+    color: white;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+.footerItem:hover {
+    background-color: #032d27;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
 .firstContentWrapper {
     display: flex;
     flex-flow: row wrap;
@@ -100,11 +149,13 @@ footer {
 
 .secondContentWrapper {
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.illustration {
+.illustrationHome {
     flex: 1;
     width: 100%;
     height: 100%;
@@ -140,6 +191,215 @@ footer {
 
 .arrow:hover {
     transform: translateX(10px) rotate(135deg);
+}
+
+.activityRow {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#activityItem1 {
+    flex: 1;
+    background-color: #174a43;
+    padding: 2em 2em;
+    text-align: center;
+    margin-right: 1em;
+}
+
+#activityItem1:hover {
+    background-color: #032d27;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+#activityItem2 {
+    flex: 1;
+    background-color: #92e0c8;
+    padding: 2em 2em;
+    text-align: center;
+    margin-right: 1em;
+    color: black;
+}
+
+#activityItem2:hover {
+    background-color: #4a9780;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+#activityItem3 {
+    flex: 1;
+    background-color: white;
+    padding: 2em 2em;
+    text-align: center;
+    color: black;
+}
+
+#activityItem3:hover {
+    background-color: rgb(189, 189, 189);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+.illustrationProfile {
+    flex: 1 100%;
+    width: 100%;
+    height: 100%;
+    margin-left: 25em;
+    margin-right: 25em;
+}
+
+.h-card {
+    flex-basis: 70%;
+    background-color: #92e0c8;
+    padding: 2em 2em;
+    color: black;
+}
+
+#cvPart1 {
+    flex: 1 1 0px;
+    background-color: white;
+    padding: 2em 2em;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cvPart2 {
+    flex: 1 1 0px;
+    background-color: white;
+    padding: 2.4em 2.4em;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.portfolioItem {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 2em 2em;
+    height: 3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#portfolioItem1, #portfolioItem4 {
+    background-color: #174a43;
+}
+
+#portfolioItem1:hover, #portfolioItem4:hover {
+    background-color: #032d27;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+#portfolioItem2 {
+    background-color: #92e0c8;
+    color: black;
+}
+
+#portfolioItem2:hover {
+    background-color: #4a9780;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+#portfolioItem3 {
+    background-color: white;
+    color: black;
+}
+
+#portfolioItem3:hover {
+    background-color: rgb(189, 189, 189);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+    transition: scale 0.5s ease-out;
+}
+
+.essayLinks {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.h-entry {
+    flex: 1 100%;
+    margin-top: 10px;
+    padding: 1em 1em;
+    align-items: left;
+}
+
+.h-entry:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: scale 0.5s ease-out;
+}
+
+.entry-title {
+    text-align: left;
+}
+
+#entry1, #entry4 {
+    background-color: #174a43;
+}
+
+#entry1:hover, #entry4:hover {
+    background-color: #032d27;
+    transition: scale 0.5s ease-out;
+}
+
+#entry2, #entry5 {
+    background-color: #92e0c8;
+    color: black;
+}
+
+#entry2:hover, #entry5:hover {
+    background-color: #4a9780;
+    transition: scale 0.5s ease-out;
+}
+
+#entry3 {
+    background-color: white;
+    color: black;
+}
+
+#entry3:hover {
+    background-color: rgb(189, 189, 189);
+    transition: scale 0.5s ease-out;
+}
+
+#essay1 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -188,14 +448,77 @@ footer {
         transform: translate(-50%, 50%) rotate(-45deg);
     }
     
-    .illustration {
+    .illustrationHome {
         flex: 1 100%;
     }
+
     .biographyHome {
         flex: 1 100%;
     }
+
     .arrow {
         width: 10px;
         height: 10px;
+    }
+
+    .activityRow {
+        width: 95%;
+    }
+
+    #activityItem1 {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    
+    #activityItem2 {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    
+    #activityItem3 {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .footerItem {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 1em;
+        padding: 0.5em 0.5em;
+    }
+
+    .illustrationProfile {
+        flex: 1 100%;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .h-card {
+        flex: 1;
+    }
+
+    #cvPart1 {
+        flex: 1 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #cvPart2 {
+        flex: 1 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .portfolioItem {
+        flex: 1 100%;
+        margin-bottom: 0.5em;
+        margin-left: 0em;
+        margin-right: 0em;
     }
 }

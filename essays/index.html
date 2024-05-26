@@ -12,25 +12,38 @@
         initialize("ESSAYS") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+        smallMenu("PORTFOLIO") </script>
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
 <header><div class="websiteHeader">CHRISTINE HOLT</div>
     <nav id="mainNav">
-        
+        <div id="navLinks">
+        </div>
+        <div id="offScreenMenu"> 
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
     </nav>
+    <script src="../scripts/hamburger.js"></script>
 </header>
     <main>
         <h1>Essays</h1>
-        <section class = "Essays-Links">
-            <article class = "h-entry">
-                <h2 class = "entry-title"><a href = "essay1.html">Essay 1: UI & UX Analysis of Laerskool Oranjegloed Primary’s Website</a></h2>
-            </article>
-        </section>
+        <div class = "firstContentWrapper">
+            <section class = "essayLinks">
+                <article class = "h-entry" id="entry1">
+                    <a href = "essay1.html" id="essay1">Essay 1: UI & UX Analysis of Laerskool Oranjegloed Primary’s Website</a>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

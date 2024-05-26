@@ -9,108 +9,123 @@
     <title>About Me</title>
     <script type="module"> import { initialize } from "../scripts/menu.js" 
         initialize("PROFILE") </script>
+    <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+        smallMenu("PROFILE") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
 <header><div class="websiteHeader">CHRISTINE HOLT</div>
     <nav id="mainNav">
+        <div id="navLinks">
 
+        </div>
+        <div id="offScreenMenu">
+            
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
     </nav>
+    <script src="../scripts/hamburger.js"></script> 
 </header> 
 <main>
-    <h1>About Me</h1>
+    <div class = "firstContentWrapper">
+        <h1>About Me</h1>
         <img class="illustrationProfile" src="images-in-profile/Illustration of Christine.png" alt="An illustration of Christine Holt by Christine Holt." title="Illustration of Christine Holt.">
         <p class = "h-card">        
-        My name is Christine Holt. You can contact me at 2615283@students.wits.ac.za. 
-        I live in Johannesburg, South Africa. I am an aspiring Game Designer, currently studing for a BA in Digital Arts at the University of the Witwatersrand. I enjoy reading in my free time, as well as playing video games and doing any form of arts and crafts, ranging from crocheting to drawing.        
-        </p>
-    <h2 id="cvHeader">CV</h2>
-    <div id="cv">
-    <div id="cvPart1">
-        <h3>Timeline</h3>
-        <ul>
-            <li id="year"><strong>2019</strong>
-                <ul>
-                    <li id="place"><em>Ho&#235rskool Transvalia</em>
-                        <ul>
-                            <li id="details">Matriculated with Distinctions in English, Accounting, Engineering and Graphic Design, and Life Orientation.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li id="year"><strong>2020</strong>
-                <ul>
-                    <li id="place"><em>University of Pretoria</em>
-                        <ul>
-                            <li id="details">BEng Civil Engineering.
-                                Passed all the subjects in the first semester.
-                                Received a Distinction in Graphical Communication.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li id="year"><strong>2021</strong>
-                <ul>
-                    <li id="place"><em>TutorsInk</em>
-                        <ul>
-                            <li id="details">Mathematics Tutor for Grade 11's and 12's, as well as 
-                                Administrative Work</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li id="year"><strong>2022 - Present</strong>
-                <ul>
-                    <li id="place"><em>University of the Witwatersrand</em>
-                        <ul>
-                            <li id="details">BA in Digital Arts. Majoring in Interactive Media, Writing and Interactivity and Game Design.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <h3>References</h3>
-        <p id="reference">Jacqueline van Greunen <br>
-            Owner, TutorsInk<br>
-            tutorsink@live.co.za<br>
-            +27 79 885 0759
+            My name is Christine Holt. You can contact me at 2615283@students.wits.ac.za. 
+            I live in Johannesburg, South Africa. I am an aspiring Game Designer, currently studing for a BA in Digital Arts at the University of the Witwatersrand. I enjoy reading in my free time, as well as playing video games and doing any form of arts and crafts, ranging from crocheting to drawing.        
         </p>
     </div>
-    <div id="cvPart2">
-        <h3>Skills</h3>
-        <ul>
-            <li>Administration</li>
-            <li>Teaching</li>
-            <li>Coding: C#</li>
-            <li>Coding: HTML</li>
-            <li>Coding: JavaScript</li>
-            <li>Coding: CSS</li>
-            <li>Writing</li>
-            <li>Game Design</li>
-        </ul>
-        <h3>Interests</h3>
-        <ul>
-            <li>Gaming</li>
-            <li>Arts, crafts, creating</li>
-            <li>Reading</li>
-            <li>Movies</li>
-            <li>Anime</li>
-            <li>History, Research</li>
-            <li>Music</li>
-            <li>Travel</li>
-            <li>Learning new things</li>
-            <li>Dancing (Currently working towards doing my second to final tap dancing exam)</li>
-        </ul>
-    </div>
+    <div class = "secondContentWrapper">
+        <h2 id="cvHeading">CV</h2>
+        <div id="cvPart1">
+            <h3>Timeline</h3>
+            <ul>
+                <li id="year"><strong>2019</strong>
+                    <ul>
+                        <li id="place"><em>Ho&#235rskool Transvalia</em>
+                            <ul>
+                                <li id="details">Matriculated with Distinctions in English, Accounting, Engineering and Graphic Design, and Life Orientation.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="year"><strong>2020</strong>
+                    <ul>
+                        <li id="place"><em>University of Pretoria</em>
+                            <ul>
+                                <li id="details">BEng Civil Engineering.
+                                    Passed all the subjects in the first semester.
+                                    Received a Distinction in Graphical Communication.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="year"><strong>2021</strong>
+                    <ul>
+                        <li id="place"><em>TutorsInk</em>
+                            <ul>
+                                <li id="details">Mathematics Tutor for Grade 11's and 12's, as well as 
+                                    Administrative Work</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="year"><strong>2022 - Present</strong>
+                    <ul>
+                        <li id="place"><em>University of the Witwatersrand</em>
+                            <ul>
+                                <li id="details">BA in Digital Arts. Majoring in Interactive Media, Writing and Interactivity and Game Design.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>References</h3>
+            <p id="reference">Jacqueline van Greunen <br>
+                Owner, TutorsInk<br>
+                tutorsink@live.co.za<br>
+                +27 79 885 0759
+            </p>
+        </div>
+        <div id="cvPart2">
+            <h3>Skills</h3>
+            <ul>
+                <li>Administration</li>
+                <li>Teaching</li>
+                <li>Coding: C#</li>
+                <li>Coding: HTML</li>
+                <li>Coding: JavaScript</li>
+                <li>Coding: CSS</li>
+                <li>Writing</li>
+                <li>Game Design</li>
+            </ul>
+            <h3>Interests</h3>
+            <ul>
+                <li>Gaming</li>
+                <li>Arts, crafts, creating</li>
+                <li>Reading</li>
+                <li>Movies</li>
+                <li>Anime</li>
+                <li>History, Research</li>
+                <li>Music</li>
+                <li>Travel</li>
+                <li>Learning new things</li>
+                <li>Dancing (Currently working towards doing my second to final tap dancing exam)</li>
+            </ul>
+        </div>
     </div>
 </main>
 <footer>
     <h3>Contact Information</h3>
-    <div class="footer-links">
-        
-    </div>
+        <div class="footerLinks">
+            
+        </div>
 </footer>
 </body>
 </html>

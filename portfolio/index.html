@@ -12,24 +12,40 @@
         initialize("PORTFOLIO") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+        smallMenu("PORTFOLIO") </script>
+    <script type="module"> import { portfolioIndex } from "../scripts/portfolioItems.js"
+        portfolioIndex()</script>
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
 <header><div class="websiteHeader">CHRISTINE HOLT</div>
     <nav id="mainNav">
-
+        <div id="navLinks">
+        </div>
+        <div id="offScreenMenu"> 
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
     </nav>
+    <script src="../scripts/hamburger.js"></script>
 </header>
 <main>
     <h1>Portfolio</h1>
-    Awesome portfolio to be found here in the future...
-    
+    <div class = "firstContentWrapper">
+        <div class="portfolio" id="portfolioItems">
+            
+        </div>
+    </div>    
 </main>
 <footer>
     <h3>Contact Information</h3>
-    <div class="footer-links">
-        
-    </div>
+        <div class="footerLinks">
+            
+        </div>
 </footer>
 </body>
 </html>
