@@ -505,6 +505,10 @@ table, th, td {
     transition: scale 0.5s ease-out;
 }
 
+#blogImage {
+    width: 100%;
+}
+
 @media screen and (max-width: 1040px) {
     #navLinks {
         display: none;
