@@ -1,0 +1,201 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+}
+
+.websiteHeader {
+    display: block;
+    float: left;
+    line-height: 1;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+#navLinks a{
+    float: right;
+    margin-right: 1em;
+    display: flex;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+#navLinks a:hover {
+    background: #85858586;
+    color: black;
+}
+
+#currentButton {
+    background-color: #92e0c8;
+    color: black;
+    cursor: pointer;
+}
+
+#otherButton {
+    color: white;
+    cursor: pointer;
+}
+
+#offScreenMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    max-width: fit-content;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    transition: 0.3s ease;
+}
+
+#offScreenMenu.active {
+    right: 0;
+}
+
+#smallMenuName {
+    margin: 1px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.firstContentWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.secondContentWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.illustration {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.biographyHome {
+    flex: 1;
+    background-color: #92e0c8;
+    color: black;
+    padding: 1.5em 1.5em;
+}
+
+.arrow {
+    cursor: pointer;
+    transform: rotate(135deg);
+    margin: 50px 20px;
+    width: 50px;
+    height: 50px; 
+    float: right;
+    background: #92e0c8;
+    transition: 0.5s;
+}
+
+.arrow:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+.arrow:hover {
+    transform: translateX(10px) rotate(135deg);
+}
+
+@media screen and (max-width: 1040px) {
+    #navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        position: relative;
+        margin-right: 2em;
+    }
+    
+    .hamburger span {
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: 0.3s ease;
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: 25%
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 75%
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+    
+    .illustration {
+        flex: 1 100%;
+    }
+    .biographyHome {
+        flex: 1 100%;
+    }
+    .arrow {
+        width: 10px;
+        height: 10px;
+    }
+}

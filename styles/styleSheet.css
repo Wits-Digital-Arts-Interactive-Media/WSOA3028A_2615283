@@ -36,7 +36,7 @@ footer {
     font-size: 40px;
 }
 
-#mainNav a{
+#navLinks a{
     float: right;
     display: block;
     text-align: center;
@@ -44,7 +44,7 @@ footer {
     text-decoration: none;
 }
 
-#mainNav a:hover {
+#navLinks a:hover {
     background: #85858586;
     color: black;
 }
@@ -152,14 +152,15 @@ h1, #homepageRecentActivitiesHeading {
 
 .homepageProfile {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     overflow-x: scroll;
-}
+} 
 
 .illustration {
     flex: 1;
-    width: 45%;
+    width: 100%;
 }
 
 .biographyHome {
@@ -168,7 +169,6 @@ h1, #homepageRecentActivitiesHeading {
     color: black;
     padding: 2em 2em;
     line-height: 1.7;
-    height: 50%;
 }
 
 .arrow {

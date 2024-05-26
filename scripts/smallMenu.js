@@ -27,25 +27,21 @@ const blogPostsAndEssays = [
     {name: "Design-Log-5"},
 ]
 
-export function initialize(currentPage) {
-    const nav = document.getElementById("navLinks")
+
+export function smallMenu(currentPage) {
+    const nav = document.getElementById("offScreenMenu")
     for (let menuItem of menuItems) {
         const a = document.createElement("a")
         if (currentPage != menuItem.name) {
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            a.setAttribute("id", "otherButton")
+            a.setAttribute("id", "smallMenuName")
             nav.appendChild(a)
         }
         else if (currentPage == menuItem.name) {
             a.innerText = menuItem.name
-            a.setAttribute("id", "currentButton")
+            a.setAttribute("id", "smallMenuName")
             nav.appendChild(a)
         }
     }
 }
-
-
-
-
-

@@ -9,6 +9,8 @@
     <title>Christine Holt</title>
     <script type="module"> import { initialize } from "./scripts/menu.js" 
         initialize("HOME") </script>
+    <script type="module"> import { smallMenu } from "./scripts/smallMenu.js" 
+        smallMenu("HOME") </script>
     <script type="module"> import { recentPosts } from "./scripts/recent-post.js"
         recentPosts()</script>
     <script type="module"> import { recentEssay } from "./scripts/recent_essays.js"
@@ -16,20 +18,34 @@
     <script type="module"> import { footer } from "./scripts/footer.js"
         footer()</script>
     <script src="./scripts/onMouseOver.js"></script>
-    <link rel="stylesheet" href="./styles/styleSheet.css">
+    
+    <link rel="stylesheet" href="./styles/StyleSheetFinal.css">
 </head>
 <body>
 <header><div class="websiteHeader">CHRISTINE HOLT</div>  
     <nav id="mainNav">
-        
-    </nav>    
+        <div id="navLinks">
+
+        </div>
+        <div id="offScreenMenu">
+            
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+    </nav>
+    <script src="./scripts/hamburger.js"></script> 
+       
 </header>
     <main>
-    <div class="homepageProfile">
+        <div class = "firstContentWrapper">
         <img class="illustration" src="images/Illustration of Christine.png" alt="An illustration of Christine Holt by Christine Holt." title="Illustration of Christine Holt.">
         <p class="biographyHome">My name is Christine Holt. Welcome to my website! I am an aspiring Game Designer, currently studing for a BA in Digital Arts at the University of the Witwatersrand. I enjoy reading in my free time, as well as playing video games and doing any form of arts and crafts, ranging from crocheting to drawing.</p>
         <a class="arrow" href="./profile/index.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"></a>
     </div>
+    <div class = "secondContentWrapper">
         <h2 id="homepageRecentActivitiesHeading">Recent Activity:</h2>
     <div class="activityRow">
         <div class="activityItem" id="activityItem1">
@@ -45,6 +61,7 @@
             <h3>Most Recent Portfolio Item</h3>
             <h4 class = "entry-title" id= "Portfolio-Item-Heading"></h4>
         </div>
+    </div>
     </div>
     </main>
     <footer>
