@@ -12,18 +12,30 @@
         initialize("Design-Log-1") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Design-Log-1") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header><div class="websiteHeader">CHRISTINE HOLT</div> 
         <nav id="mainNav">
-
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>   
-        <h1 class = "entry-title" id="post">Design Log 1</h1>         
-            <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1 id="post">Design Log 1</h1>         
+            <article class="entry-content" id="postEntry">
                 
                 <strong>Goal Alignment:</strong>
                 <ul>
@@ -51,11 +63,12 @@
                 </li>
                 </ul>
                 <strong>Information Structure:</strong>
-                    <img id="blogImage" src="images-in-designs/InformationStructure.png" alt="image of the information structure of my website." title="Information Structure">
+                <p><img id="blogImage" src="images-in-designs/InformationStructure.png" alt="image of the information structure of my website." title="Information Structure"></p>
             
                 <strong>User Flow:</strong>
-                    <img id="blogImage" src="images-in-designs/UserFlow.png" alt="image of the possible user flow of my website" title="User Flow">
+                    <p><img id="blogImage" src="images-in-designs/UserFlow.png" alt="image of the possible user flow of my website" title="User Flow"></p>
             </article>
+        </div>
     </main>
     <nav>
         <section class="Navigation-Buttons">
@@ -70,7 +83,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

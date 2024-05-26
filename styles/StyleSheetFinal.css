@@ -367,31 +367,31 @@ footer h3 {
     text-align: left;
 }
 
-#entry1, #entry4 {
+#entry1, #entry4, #entry7, #entry10 {
     background-color: #174a43;
 }
 
-#entry1:hover, #entry4:hover {
+#entry1:hover, #entry4:hover, #entry7:hover, #entry10:hover {
     background-color: #032d27;
     transition: scale 0.5s ease-out;
 }
 
-#entry2, #entry5 {
+#entry2, #entry5, #entry8, #entry11 {
     background-color: #92e0c8;
     color: black;
 }
 
-#entry2:hover, #entry5:hover {
+#entry2:hover, #entry5:hover, #entry8:hover {
     background-color: #4a9780;
     transition: scale 0.5s ease-out;
 }
 
-#entry3 {
+#entry3, #entry6, #entry9 {
     background-color: white;
     color: black;
 }
 
-#entry3:hover {
+#entry3:hover, #entry6:hover, #entry9:hover {
     background-color: rgb(189, 189, 189);
     transition: scale 0.5s ease-out;
 }
@@ -400,6 +400,34 @@ footer h3 {
     text-decoration: none;
     color: white;
     font-size: 25px;
+}
+
+#blogLinks {
+    width: 80%;
+}
+
+.entry-content {
+    flex-basis: 80%;
+    background-color: white;
+    color: black;
+    padding: 1.5em 1.5em;
+}
+
+.wireframeImageRow {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.wireframeImage {
+    flex: 1;
+    padding: 5px;
+}
+
+#wireframe {
+    width: 100%;
 }
 
 @media screen and (max-width: 1040px) {
@@ -520,5 +548,17 @@ footer h3 {
         margin-bottom: 0.5em;
         margin-left: 0em;
         margin-right: 0em;
+    }
+
+    #blogLinks {
+        width: 100%;
+    }
+
+    .entry-content {
+        flex-basis: 100%;
+    }
+
+    .wireframeImage {
+        flex: 1 100%;
     }
 }

@@ -12,19 +12,31 @@
         initialize("Blog-5")</script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Blog-5") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header>
         <div class="websiteHeader">CHRISTINE HOLT</div>   
         <nav id="mainNav">
-            
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title">Blog Post 5</h1>
-            <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1>Blog Post 5</h1>
+            <article class="entry-content" id="postEntry">
                 
                 <p>So, in looking for websites to analyze, I wasn't sure how to approach looking for a South African Websites that would be interesting for me to look at and analyze. But then I remembered, the high school I was in had a website. And I am sure that other high schools also have websites. I thought it might be interesting to look at how accessible and usable these websites are. </p>
                 <strong>Websites</strong>
@@ -54,6 +66,7 @@
                 <em>Cons:</em>
                 <p>I was struggling to find something that bothered me all that much. </p>
             </article>
+        </div>
     </main>
     <nav>
         <section class="Blog-Navigation-Buttons">
@@ -68,7 +81,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

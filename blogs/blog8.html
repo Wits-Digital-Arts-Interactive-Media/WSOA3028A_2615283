@@ -12,19 +12,31 @@
         initialize("Blog-8")</script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Blog-8") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header>
         <div class="websiteHeader">CHRISTINE HOLT</div>    
         <nav id="mainNav">
-            
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title">Blog Post 8</h1>
-            <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1>Blog Post 8</h1>
+            <article class="entry-content" id="postEntry">
                 
                 <p>The piece I decided to do a close reading on is the piece by Sheena Magenya (2020), named <cite><a href ="https://www.genderit.org/editorial/making-feminist-internet-africa-why-internet-needs-african-feminists-and-feminisms">"Making A feminist Internet In Africa: Why The Internet Needs African Feminists and Feminisms."</a></cite></p>
                 <p>The piece talks about how there should be more African Feminists on the internet, because we need greater amounts of content about the experiences of people that are different from the norm (or rather things that should be seen as normal, but isn't). Content from women, members of the LGBTQIA+, people who live with disabilities, and people who do not fall into what is seen as the 'norm'.</p>
@@ -46,6 +58,7 @@
                 <p>Graham, M., De Sabbata, S. and Zook, M.A. (2015). 'Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information. Geo: Geography and Environment', 2(2), pp.88-105. doi:10.1002/geo2.8</p>
                 <p>Magenya, S. (2020). 'Making a Feminist Internet in Africa: Why the internet needs African Feminists and Feminisms'. [online] <em>GenderIT.org</em>. Available at: <a href = "https://www.genderit.org/editorial/making-feminist-internet-africa-why-internet-needs-african-feminists-and-feminisms">https://www.genderit.org/editorial/making-feminist-internet-africa-why-internet-needs-african-feminists-and-feminisms</a>[Accessed 27 April 2024]</p>
             </article>
+        </div>
     </main>
     <nav>
         <section class="Blog-Navigation-Buttons">
@@ -60,7 +73,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

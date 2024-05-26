@@ -16,6 +16,10 @@ export function designsIndex() {
         article.setAttribute("id", design.id)
         place.appendChild(article);
 
+        article.addEventListener('click', function() {
+            location.href = design.href
+        }, false)
+
         const heading = document.createElement("h2")
         heading.setAttribute("class", "entry-title")
         heading.innerText = design.name

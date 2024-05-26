@@ -12,19 +12,31 @@
         initialize("Blog-4")</script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Blog-4") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header>
         <div class="websiteHeader">CHRISTINE HOLT</div>  
         <nav id="mainNav">
-            
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title">Blog Post 4:</h1>
-            <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1>Blog Post 4:</h1>
+            <article class="entry-content" id="postEntry">
                 
                 <strong>Goal Alignment:</strong>
                 <ul>
@@ -77,6 +89,7 @@
                     <p>The way the website looks right now isn't all that great, and I would like to be able to change that soon, and make it look a bit more like I want it to. There is 
                     still a lot I want to implement and I am not able to do some of it yet, but I am excited to learn how to do so.</p>
             </article>
+        </div>
     </main>
     <nav>
         <section class="Blog-Navigation-Buttons">
@@ -91,7 +104,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

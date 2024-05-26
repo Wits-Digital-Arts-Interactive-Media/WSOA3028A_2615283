@@ -12,18 +12,30 @@
         initialize("Essay-1") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Essay-1") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header><div class="websiteHeader">CHRISTINE HOLT</div>
         <nav id="mainNav">
-            
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title" id="post">UI & UX Analysis of Laerskool Oranjegloed Primary’s Website:</h1>
-            <article class="h-entry"  id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1 id="post">UI & UX Analysis of Laerskool Oranjegloed Primary’s Website:</h1>
+            <article class="entry-content"  id="postEntry">
                 
                 <p>The website analysed for this essay is the website for Laerskool Oranjegloed Primary (n.d.) in
                     Secunda.</p>
@@ -190,11 +202,12 @@
                 <p>Sachdeva, N. (2023). ’10 Key Principles for Ethical UX Design with Real-World Use Cases.’ daffodil. 11 April. Available at: <a href = "https://insights.daffodilsw.com/blog/ethical-ux-design">https://insights.daffodilsw.com/blog/ethical-ux-design</a> [Accessed on: 7 April 2024]</p>
                 <p>Team Designlab. (2024). ‘Ethical Considerations in UX Design.’ Designlab. 8 February. Available at: <a href ="https://designlab.com/blog/ethical-considerations-in-ux-design">https://designlab.com/blog/ethical-considerations-in-ux-design</a> [Accessed on: 7 April 2024]</p>
             </article>
+        </div>
     </main>
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

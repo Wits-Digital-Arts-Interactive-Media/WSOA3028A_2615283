@@ -12,19 +12,31 @@
         initialize("Blog-9")</script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Blog-9") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header>
         <div class="websiteHeader">CHRISTINE HOLT</div>   
         <nav id="mainNav">
-            
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title">Blog Post 9</h1>
-        <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1>Blog Post 9</h1>
+        <article class="entry-content" id="postEntry">
             
             <strong>Development process:</strong>
             <p>I was really struggling when it came to the implementation of the JavaScript in my website. The main problem I ran into is that many of the things I wanted to implement, you really needed to use CSS as well, and that made it a little hard to implement the JavaScript on its own. Where I ended up using it, except for the main navigation in the website was in the following places:
@@ -72,6 +84,7 @@
             <p>This reading made my distrust for social media that has been made in the Global North even more. When the reading mentioned how Facebook basically assigned themselves, "...the authority responsible for mapping, controlling, and creating population knowledge of the continent." I was anything but excited. It is scary to see how many things that we use on the daily basis, that claim to be 'safe', 'unbiased' and 'neutral', is anything but that. And how these colonial ideologies are casually being wormed into everything we interact with on the daily, and how in some cases it is praised. It makes me upset to know that many of the newest AI and technologies are made and used to manipulate for an extra bit of money, and all that to the detriment of people on the sidelines. </p>
             <p>The section "Context Matters" in the reading, was a really fascinating piece, as it made a lot of sense and made me think over the things I use on the daily. It talks about how something made to solve the problems in one culture might not work and solve the problems in another culture. This is something that I think is important for us as South African developers to keep in mind when we make websites for others to use. We need to be critical of the things we use, and really assess whether it will work in our context and help solve the problems we encounter. I think it is often better to search for solutions locally, as local solutions are catered to our local needs.</p>
         </article>
+    </div>
     </main>
     <nav>
         <section class="Blog-Navigation-Buttons">
@@ -86,7 +99,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>

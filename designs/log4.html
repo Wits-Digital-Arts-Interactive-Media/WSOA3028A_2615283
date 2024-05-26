@@ -12,18 +12,30 @@
         initialize("Design-Log-4") </script>
     <script type="module"> import { footer } from "../scripts/footer.js"
         footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Design-Log-4") </script>
     <script src = "../scripts/scroll-to-top.js"></script>
-    <link rel="stylesheet" href="../styles/styleSheet.css">
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
 </head>
 <body>
     <header><div class="websiteHeader">CHRISTINE HOLT</div> 
         <nav id="mainNav">
-
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
         </nav>
+        <script src="../scripts/hamburger.js"></script>
     </header>
     <main>
-        <h1 class = "entry-title" id="post">Design Log 4</h1>
-            <article class="h-entry" id="postEntry">
+        <div class = "firstContentWrapper">  
+        <h1 id="post">Design Log 4</h1>
+            <article class="entry-content" id="postEntry">
                 
                     <strong>Interface Elements</strong>
                     <ul>
@@ -106,6 +118,7 @@
                     <img src="images-in-designs/StyleGuide3.png" alt="Table containing the starting information for my style guide" title="Style Guide" id="styleGuide">
                 
             </article>
+        </div>
     </main>
     <section class="Navigation-Buttons">
         <article class="Back-to-Design-Logs">
@@ -119,7 +132,7 @@
     <button onclick="scrollToTop()">Back to Top</button>
     <footer>
         <h3>Contact Information</h3>
-        <div class="footer-links">
+        <div class="footerLinks">
             
         </div>
     </footer>
