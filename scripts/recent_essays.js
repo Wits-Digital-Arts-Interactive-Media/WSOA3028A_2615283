@@ -13,4 +13,4 @@ export function recentEssay() {
 
 document.getElementById('activityItem2').addEventListener('click', function() {
     location.href = essays[essays.length - 1].href
-}, false);
+}, false)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christine Holt">
+    <meta name="description" content="Blog 10. The content for blog 10 will be found here. This post contains a reflection on my development as well as some benefits and challenges of responsive design that I encountered.">
+    <meta name="keywords" content="Blogs, Dev-Blogs">
+    <!--<meta name="robots" content="">-->
+    <title>Blog Post 10</title>
+    <script type = "module">import { initialize } from "../scripts/menu.js"
+        initialize("Blog-10")</script>
+    <script type="module"> import { footer } from "../scripts/footer.js"
+        footer()</script>
+        <script type="module"> import { smallMenu } from "../scripts/smallMenu.js" 
+            smallMenu("Blog-10") </script>
+    <script src = "../scripts/scroll-to-top.js"></script>
+    <link rel="stylesheet" href="../styles/StyleSheetFinal.css">
+</head>
+<body>
+    <header>
+        <div class="websiteHeader">CHRISTINE HOLT</div>   
+        <nav id="mainNav">
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+        </nav>
+        <script src="../scripts/hamburger.js"></script>
+    </header>
+    <main>
+        <div class = "firstContentWrapper">  
+        <h1>Blog Post 10</h1>
+        <article class="entry-content" id="postEntry">
+            <h2>How your CSS relates to the HTML and JS</h2>
+            <p>I was fascinated to see how they all integrated in the end, especially regarding the index pages for the blogs and the logs.</p>
+            <p>Because I could use JavaScript to add classes and IDs, as generalized or as specific as I wanted, it wasn’t necessary for me to write everything out in HTML in order to be able to use the micro formatting to add the CSS needed. The HTML was of course more needed in some other places like in the individual posts, as that is more content-based and cannot be streamlined.</p>
+            <p>I had to really keep track of which classes and which IDs I used where in order to make the CSS cooperate, however, after going back and adjusting some names and adding some containers, I was able to do this relatively easily by using names that are logical to each section I used them in. </p>
+            <p>The coolest implementation of the three together was the hamburger menu I made. It was hard, and it gave me more headaches than I thought was necessary, but it is there and it works… I hope. It’s really cool though, because it uses all three coding languages in perfect tandem to create a smaller menu, and when it finally worked, I was rather impressed. </p>
+            <h2>The benefits and challenges of responsive design</h2>
+            <p>The benefits of responsive design were made very evident when I was making this website more responsive. It makes it easier for users to see your website on any device, with any screen size. This makes it easier to get your work out to more people, as not everyone has a computer to view your work on. </p>
+            <p>When doing responsive design from the start, I imagine that implementing it throughout the website is quite a bit more streamlined, and might be less confusing to do.</p>
+            <p>This was part of the challenges I faced. It was quite hard to backtrack in order to add responsiveness. And keeping up was a whole other ball game. </p>
+            <p>The biggest challenge, however, was getting my website to be able to work on all devices. It still doesn’t. When looking at the list of devices you can test your website on in the web inspect element, I definitely do not hit all of them, which is frustrating. The knowledge that the website just does not cooperate on certain devices makes it even more frustrating.</p>
+            <p>This is something I am definitely coming back to, however, for the last website. </p>
+            <h2>When thinking about how our code matters in decolonialism, can you identify any things in your own coding practice that you should be aware of?</h2>
+            <p>A quote by Flanagan, Howe and Nissenbaum (2005) comes to mind when I think about this: “It is one thing to subscribe, generally, to these ideas, even to make a pragmatic commitment to them, but putting them into practice in the design of technical systems such as software games is not straightforward.” And I think this is very valid to us as developers.</p>
+            <p>I would love to have my website be accessible to everyone, and perfect in every way, free from bias and usable by everyone. But right now, that isn’t possible. If I were to only ever work on projects like this on my own, without any input from other people who are different from me, I do not think it will ever reach that point. </p>
+            <p>We have talked many times in class about how a diverse group of people are needed to work on these things in order to find shortcomings, that others might not find. </p>
+            <p>I can see this on my own website as it is right now. I am trying to get it to a point where everyone can use it without any problems, but it is not there yet, and it might never be. I have biases, even if I do not necessarily know they are there. I try my best to be aware of them and bypass them, but there will always be something I miss. This is why I think it is important to have more people look at it, to point out the things I cannot see. </p>
+            <p>I think my website is also at the perfect point for me to do this as well, to give it to different people so they can point out where my shortcomings are, so I can make adjustments and improve. </p>
+            <h3>References: </h3>
+            <p><cite>Flanagan, M., Howe, D. C., & Nissenbaum, H. (2005).</cite> Values at Play: Design Tradeoffs in Socially-Oriented Game Design. CHI 2005, April 2–7, 2005, Portland, Oregon, USA. ACM Press. DOI: 10.1145/1054972.1055071.</p>
+        </article>
+        </div>
+    </main>
+    <nav>
+        <section class="Navigation-Buttons">
+            <article class="Back-to-Blogs">
+                <a href="index.html" id="blogs">Back to Blogs</a>
+            </article>
+            <article class="Next-Or-Previous-Blog">
+                <a href="blog9.html" id = "previous">Previous Blog</a> <a href="blog11.html" id = "next">Next Blog</a>
+            </article>
+        </section>
+    </nav>
+    <button onclick="scrollToTop()" id="backUp">Back to Top</button>
+    <footer>
+        <h3>Contact Information</h3>
+        <div class="footerLinks">
+            
+        </div>
+    </footer>
+</body>
+</html>

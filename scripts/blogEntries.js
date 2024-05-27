@@ -9,9 +9,9 @@ const blogs = [
     {id: "entry6", name: "Blog 6: The lack of women in tech.", href: `${root}blogs/blog6.html`, summary: "In this post I explore why there are not enough women in tech jobs and what we can do to improve female representation in tech fields."},
     {id: "entry7", name: "Blog 7: The spread of the internet.", href: `${root}blogs/blog7.html`, summary: "This week I reflect on the spread of internet access around the world and what that means for me as a South African developer."},
     {id: "entry8", name: "Blog 8: Close Reading on 'Making A feminist Internet In Africa: Why The Internet Needs African Feminists and Feminisms' by Sheena Magenya(2020)", href: `${root}blogs/blog8.html`, summary: "In this post I do a close reading of the article 'Making A feminist Internet In Africa: Why The Internet Needs African Feminists and Feminisms' by Sheena Magenya(2020)"},
-    {id: "entry9", name: "Blog 9: reflection on my development and 'Algorithmic Colonization in Africa' by Abeba Birhane.", href: `${root}blogs/blog9.html`, summary: "In this post I do a little bit of reflection on my development process up until now, and I reflect on 'Algorithmic Colonization in Africa' by Abeba Birhane."},
-    {id: "entry10", name: "Blog 10", href: `${root}blogs/blog10.html`, summary: ""},
-    {id: "entry11", name: "Blog 11", href: `${root}blogs/blog11.html`, summary: ""},
+    {id: "entry9", name: "Blog 9: A reflection on my development and 'Algorithmic Colonization in Africa' by Abeba Birhane.", href: `${root}blogs/blog9.html`, summary: "In this post I do a little bit of reflection on my development process up until now, and I reflect on 'Algorithmic Colonization in Africa' by Abeba Birhane."},
+    {id: "entry10", name: "Blog 10: A reflection on Development and the benefits and challenges of responsive design.", href: `${root}blogs/blog10.html`, summary: "In this post I talk abou some of my most recent development as well as a reflection on the benefits and the challenges of responsive design that I encountered."},
+    {id: "entry11", name: "Blog 11: The ethics of the internet.", href: `${root}blogs/blog11.html`, summary: "In this post I talk on the eithics of the internet, what it looks like, what I want it to look like and the challenges we face."},
 ]
 
 export function blogsIndex() {

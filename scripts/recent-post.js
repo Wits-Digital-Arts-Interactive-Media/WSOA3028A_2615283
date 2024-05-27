@@ -10,6 +10,8 @@ const blogs = [
     {name: "Blog Post 7", href: `${root}blogs/blog7.html`},
     {name: "Blog Post 8", href: `${root}blogs/blog8.html`},
     {name: "Blog Post 9", href: `${root}blogs/blog9.html`},
+    {name: "Blog Post 10", href: `${root}blogs/blog10.html`},
+    {name: "Blog Post 11", href: `${root}blogs/blog11.html`},
 ]
 
 export function recentPosts() {
@@ -21,4 +23,4 @@ export function recentPosts() {
 
 document.getElementById('activityItem1').addEventListener('click', function() {
     location.href = blogs[blogs.length - 1].href
-}, false);
+}, false)

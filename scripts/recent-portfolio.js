@@ -16,4 +16,4 @@ export function recentItem() {
 
 document.getElementById('activityItem3').addEventListener('click', function() {
     location.href = items[items.length - 1].href
-}, false);
+}, false)
