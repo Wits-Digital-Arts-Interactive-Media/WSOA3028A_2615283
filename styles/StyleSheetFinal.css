@@ -1,4 +1,5 @@
 header {
+    display: flex;
     position: fixed;
     width: 100%;
     top: 0;
@@ -9,7 +10,7 @@ header {
 }
 
 .websiteHeader {
-    display: block;
+    flex: 1;
     float: left;
     line-height: 1;
     text-decoration: none;
@@ -104,7 +105,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 0.2rem;
 }
 
 footer h3 {
@@ -138,6 +139,12 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+}
+
+#button {
+    background-color: #92e0c8;
+    padding: 0.5em 0.5em;
+    align-items: left;
 }
 
 .firstContentWrapper {
@@ -450,6 +457,7 @@ table, th, td {
     width: 20%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5em;
 }
 
 .Back-to-Blogs {
@@ -507,6 +515,17 @@ table, th, td {
 
 #blogImage {
     width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .websiteHeader {
+        flex: 1;
+        float: left;
+        line-height: 1;
+        text-decoration: none;
+        font-size: 20px;
+        padding-top: 0.2em;
+    }
 }
 
 @media screen and (max-width: 1040px) {
