@@ -1,10 +1,13 @@
-document.addEventListener ("click", function (event) {
-    if (!event.target.matches("#factButton")) return
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener ("click", function (event) {
+        if (!event.target.matches("#factButton")) return
     
-    fetch ("https://uselessfacts.jsph.pl/api/v2/facts/random")
-        .then((response) => response.json())
-        .then((data) => renderFact(data))
-        .catch(() => renderError());
+       fetch ("https://uselessfacts.jsph.pl/api/v2/facts/random")
+            .then((response) => response.json())
+            .then((data) => renderFact(data))
+            .catch(() => renderError())
+    })
 })
 
 function renderFact(data) {
