@@ -12,6 +12,7 @@ export function footer() {
         a.setAttribute("href", footerItem.href)
         a.setAttribute("class", "footerItem")
         a.setAttribute("id", "link")
+        a.setAttribute("target", "_blank")
         nav.appendChild(a)
     }
 }

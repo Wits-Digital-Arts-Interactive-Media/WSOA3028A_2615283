@@ -29,12 +29,14 @@ header {
 #navLinks a:hover {
     background: #85858586;
     color: black;
+    border-radius: 4px;
 }
 
 #currentButton {
     background-color: #92e0c8;
     color: black;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #otherButton {
@@ -131,6 +133,7 @@ footer h3 {
     margin-right: 0.5em;
     margin-left: 0.5em;
     padding: 0.5em 0.5em;
+    border-radius: 4px;
 }
 
 .footerItem:hover {
@@ -139,12 +142,7 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
-}
-
-#button {
-    background-color: #92e0c8;
-    padding: 0.5em 0.5em;
-    align-items: left;
+    border-radius: 4px;
 }
 
 .firstContentWrapper {
@@ -216,6 +214,7 @@ footer h3 {
     padding: 2em 2em;
     text-align: center;
     margin-right: 1em;
+    border-radius: 4px;
 }
 
 #activityItem1:hover {
@@ -224,6 +223,7 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #activityItem2 {
@@ -233,6 +233,7 @@ footer h3 {
     text-align: center;
     margin-right: 1em;
     color: black;
+    border-radius: 4px;
 }
 
 #activityItem2:hover {
@@ -241,6 +242,7 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #activityItem3 {
@@ -249,6 +251,7 @@ footer h3 {
     padding: 2em 2em;
     text-align: center;
     color: black;
+    border-radius: 4px;
 }
 
 #activityItem3:hover {
@@ -257,6 +260,7 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 .illustrationProfile {
@@ -314,6 +318,7 @@ footer h3 {
 
 #portfolioItem1, #portfolioItem4 {
     background-color: #174a43;
+    border-radius: 4px;
 }
 
 #portfolioItem1:hover, #portfolioItem4:hover {
@@ -322,11 +327,13 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #portfolioItem2 {
     background-color: #92e0c8;
     color: black;
+    border-radius: 4px;
 }
 
 #portfolioItem2:hover {
@@ -335,11 +342,13 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #portfolioItem3 {
     background-color: white;
     color: black;
+    border-radius: 4px;
 }
 
 #portfolioItem3:hover {
@@ -348,6 +357,29 @@ footer h3 {
     cursor: pointer;
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
+}
+
+#factButton {
+    align-items: center;
+    background: #92e0c8;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    transition: 0.1s ease transform;
+    cursor: pointer;
+}
+
+#factButton:active {
+    transform: translatey(3px);
+}
+
+#fact {
+    flex: 1 100%;
+    text-align: center;
 }
 
 .essayLinks {
@@ -377,31 +409,37 @@ footer h3 {
 
 #entry1, #entry4, #entry7, #entry10 {
     background-color: #174a43;
+    border-radius: 4px;
 }
 
 #entry1:hover, #entry4:hover, #entry7:hover, #entry10:hover {
     background-color: #032d27;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #entry2, #entry5, #entry8, #entry11 {
     background-color: #92e0c8;
     color: black;
+    border-radius: 4px;
 }
 
 #entry2:hover, #entry5:hover, #entry8:hover {
     background-color: #4a9780;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #entry3, #entry6, #entry9 {
     background-color: white;
     color: black;
+    border-radius: 4px;
 }
 
 #entry3:hover, #entry6:hover, #entry9:hover {
     background-color: rgb(189, 189, 189);
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #essay1 {
