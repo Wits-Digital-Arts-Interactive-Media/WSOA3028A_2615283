@@ -9,7 +9,7 @@ header {
     padding: 0.5em;
 }
 
-.websiteHeader {
+.websiteTitle {
     flex: 1;
     float: left;
     line-height: 1;
@@ -261,6 +261,18 @@ footer h3 {
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
     border-radius: 4px;
+}
+
+#Blog-Heading {
+    text-align: center;
+}
+
+#Essay-Heading {
+    text-align: center;
+}
+
+#Portfolio-Item-Heading {
+    text-align: center;
 }
 
 .illustrationProfile {
