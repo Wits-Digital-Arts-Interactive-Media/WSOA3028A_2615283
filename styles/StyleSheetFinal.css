@@ -7,6 +7,7 @@ header {
     background-color: black;
     color: white;
     padding: 0.5em;
+    z-index: 100;
 }
 
 .websiteTitle {
@@ -288,7 +289,7 @@ footer h3 {
     margin-right: 25em;
 }
 
-.h-card {
+#profileContent {
     flex-basis: 70%;
     background-color: #92e0c8;
     padding: 2em 2em;
@@ -316,7 +317,7 @@ footer h3 {
 .portfolio {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: normal;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 80%;
@@ -328,9 +329,9 @@ footer h3 {
     text-decoration: none;
     color: white;
     padding: 2em 2em;
-    height: 3em;
     margin-left: 0.5em;
     margin-right: 0.5em;
+
 }
 
 #portfolioItem1, #portfolioItem4 {
@@ -375,6 +376,10 @@ footer h3 {
     transition: background-color 0.5s ease-out;
     transition: scale 0.5s ease-out;
     border-radius: 4px;
+}
+
+#portfolioSmallImage {
+    width: 75%;
 }
 
 #factButton {
