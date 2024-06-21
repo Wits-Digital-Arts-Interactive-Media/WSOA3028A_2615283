@@ -202,13 +202,13 @@ footer h3 {
 .activityRow {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: normal;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 70%;
 }
 
-#activityItem1 {
+#activityItem1, #activityItem4 {
     flex: 1;
     background-color: #174a43;
     padding: 2em 2em;
@@ -217,7 +217,7 @@ footer h3 {
     border-radius: 4px;
 }
 
-#activityItem1:hover {
+#activityItem1:hover , #activityItem4:hover {
     background-color: #032d27;
     transform: scale(1.05);
     cursor: pointer;
@@ -252,6 +252,7 @@ footer h3 {
     text-align: center;
     color: black;
     border-radius: 4px;
+    margin-right: 1em;
 }
 
 #activityItem3:hover {
@@ -272,6 +273,10 @@ footer h3 {
 }
 
 #Portfolio-Item-Heading {
+    text-align: center;
+}
+
+#Design-Log-Heading {
     text-align: center;
 }
 
@@ -460,6 +465,12 @@ footer h3 {
     font-size: 25px;
 }
 
+#essay2 {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
 #blogLinks {
     width: 80%;
 }
@@ -515,11 +526,13 @@ table, th, td {
     background-color: #92e0c8;
     text-align: center;
     margin-bottom: 5px;
+    border-radius: 4px;
 }
 
 .Back-to-Blogs:hover {
     background-color: #4a9780;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #blogs {    
@@ -541,11 +554,13 @@ table, th, td {
     padding: 2px;
     margin-right: 0.25em;
     text-align: center;
+    border-radius: 4px;
 }
 
 #previous:hover {
     background-color: #032d27;
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #next {
@@ -556,11 +571,13 @@ table, th, td {
     padding: 2px;
     margin-left: 0.25em;
     text-align: center;
+    border-radius: 4px;
 }
 
 #next:hover {
     background-color: rgb(189, 189, 189);
     transition: scale 0.5s ease-out;
+    border-radius: 4px;
 }
 
 #blogImage {

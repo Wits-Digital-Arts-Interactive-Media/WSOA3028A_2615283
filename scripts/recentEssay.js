@@ -2,6 +2,7 @@ const root =  "/WSOA3028A_2615283/"
 
 const essays = [
     {name: "Essay 1: UI & UX Analysis.", href: `${root}essays/essay1.html`},
+    {name: "Essay 2: Digital Colonialism.", href: `${root}essays/essay1.html`},
 ]
 
 export function recentEssay() {
