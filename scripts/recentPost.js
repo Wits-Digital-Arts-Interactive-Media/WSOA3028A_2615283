@@ -21,6 +21,6 @@ export function recentPosts() {
     name.appendChild(a)    
 }
 
-document.getElementById('activityItem1').addEventListener('click', function() {
+document.getElementById('activityItem3').addEventListener('click', function() {
     location.href = blogs[blogs.length - 1].href
 }, false)

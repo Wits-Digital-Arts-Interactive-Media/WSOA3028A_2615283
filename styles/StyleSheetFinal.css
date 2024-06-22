@@ -330,22 +330,23 @@ footer h3 {
 }
 
 .portfolioItem {
-    flex: 1;
+    flex: 1 14%;
     text-align: center;
     text-decoration: none;
     color: white;
     padding: 2em 2em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-
+    margin-bottom: 1em;
 }
 
-#portfolioItem1, #portfolioItem4 {
+#portfolioItem1, #portfolioItem4, #portfolioItem5, #portfolioItem8 {
     background-color: #174a43;
     border-radius: 4px;
+    text-align: center;
 }
 
-#portfolioItem1:hover, #portfolioItem4:hover {
+#portfolioItem1:hover, #portfolioItem4:hover, #portfolioItem5:hover, #portfolioItem8:hover {
     background-color: #032d27;
     transform: scale(1.05);
     cursor: pointer;
@@ -354,13 +355,14 @@ footer h3 {
     border-radius: 4px;
 }
 
-#portfolioItem2 {
+#portfolioItem2, #portfolioItem6, #portfolioItem9 {
     background-color: #92e0c8;
     color: black;
     border-radius: 4px;
+    text-align: center;
 }
 
-#portfolioItem2:hover {
+#portfolioItem2:hover, #portfolioItem6:hover, #portfolioItem9:hover {
     background-color: #4a9780;
     transform: scale(1.05);
     cursor: pointer;
@@ -369,13 +371,14 @@ footer h3 {
     border-radius: 4px;
 }
 
-#portfolioItem3 {
+#portfolioItem3, #portfolioItem7, #portfolioItem10 {
     background-color: white;
     color: black;
     border-radius: 4px;
+    text-align: center;
 }
 
-#portfolioItem3:hover {
+#portfolioItem3:hover, #portfolioItem7:hover, #portfolioItem10:hover {
     background-color: rgb(189, 189, 189);
     transform: scale(1.05);
     cursor: pointer;
@@ -593,6 +596,11 @@ table, th, td {
 
 #blogImage {
     width: 100%;
+}
+
+#portfolioTitle {
+    font-weight: bold;
+    font-size: large;
 }
 
 @media screen and (max-width: 400px) {

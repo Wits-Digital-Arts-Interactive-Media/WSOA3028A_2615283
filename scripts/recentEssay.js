@@ -2,7 +2,7 @@ const root =  "/WSOA3028A_2615283/"
 
 const essays = [
     {name: "Essay 1: UI & UX Analysis.", href: `${root}essays/essay1.html`},
-    {name: "Essay 2: Digital Colonialism.", href: `${root}essays/essay1.html`},
+    {name: "Essay 2: Digital Colonialism.", href: `${root}essays/essay2.html`},
 ]
 
 export function recentEssay() {
@@ -12,6 +12,6 @@ export function recentEssay() {
     name.appendChild(a)    
 }
 
-document.getElementById('activityItem2').addEventListener('click', function() {
+document.getElementById('activityItem4').addEventListener('click', function() {
     location.href = essays[essays.length - 1].href
 }, false)

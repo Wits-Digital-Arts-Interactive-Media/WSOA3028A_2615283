@@ -16,6 +16,6 @@ export function recentLog() {
     name.appendChild(a)    
 }
 
-document.getElementById('activityItem4').addEventListener('click', function() {
+document.getElementById('activityItem2').addEventListener('click', function() {
     location.href = designLogs[designLogs.length - 1].href
 }, false)
