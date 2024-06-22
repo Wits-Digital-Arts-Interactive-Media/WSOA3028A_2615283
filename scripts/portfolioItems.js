@@ -9,8 +9,6 @@ const portfolioItems = [
     {id: "6", name: "Micro Fiction", href: `${root}portfolio/item6.html`},
     {id: "7", name: "Character Piece", href: `${root}portfolio/item7.html`},
     {id: "8", name: "Short Story", href: `${root}portfolio/item8.html`},
-    {id: "9", name: "First Person Twine Piece", href: `${root}portfolio/item9.html`},
-    {id: "10", name: "Third Person Twine Piece", href: `${root}portfolio/item10.html`},
 ]
 
 export function portfolioIndex() {
