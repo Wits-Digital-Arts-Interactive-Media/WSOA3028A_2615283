@@ -157,7 +157,7 @@ footer h3 {
 .secondContentWrapper {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: normal;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -296,6 +296,12 @@ footer h3 {
     color: black;
 }
 
+#inspiration {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
 #cvPart1 {
     flex: 1 1 0px;
     background-color: white;
@@ -308,7 +314,7 @@ footer h3 {
 #cvPart2 {
     flex: 1 1 0px;
     background-color: white;
-    padding: 2.4em 2.4em;
+    padding: 2em 2em;
     color: black;
     margin-left: 10px;
     margin-right: 10px;
@@ -590,7 +596,7 @@ table, th, td {
 }
 
 @media screen and (max-width: 400px) {
-    .websiteHeader {
+    .websiteTitle {
         flex: 1;
         float: left;
         line-height: 1;
@@ -676,6 +682,12 @@ table, th, td {
     }
     
     #activityItem3 {
+        flex: 1 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    #activityItem4 {
         flex: 1 100%;
         margin-right: 0;
         margin-bottom: 1em;
