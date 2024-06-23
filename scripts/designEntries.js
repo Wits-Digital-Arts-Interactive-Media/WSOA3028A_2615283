@@ -22,8 +22,12 @@ const designs = [
     href: `${root}designs/log5.html`, 
     summary: "Here are my current design sketches in the form of wireframes and colour blockouts."},
     {id: "entry6", 
-    name: "Design Log 6: Implementation Documentation.", 
+    name: "Design Log 6: Current Wireframes and Colour Blockouts.", 
     href: `${root}designs/log6.html`, 
+    summary: "Here are my current design sketches in the form of wireframes and colour blockouts."},
+    {id: "entry7", 
+    name: "Design Log 7: Implementation Documentation.", 
+    href: `${root}designs/log7.html`, 
     summary: "Implementation documentation for my HTML, JavaScript and CSS."},
 ]
 

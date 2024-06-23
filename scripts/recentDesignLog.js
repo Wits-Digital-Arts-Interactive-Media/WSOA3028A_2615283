@@ -7,6 +7,7 @@ const designLogs = [
     {name: "Design Log 4: Interface Elements and Style Guide.", href: `${root}designs/log4.html`},
     {name: "Design Log 5: Current Wireframes and Colour Blockouts.", href: `${root}designs/log5.html`},
     {name: "Design Log 6: Implementation Documentation.", href: `${root}designs/log6.html`},
+    {name: "Design Log 7: Implementation Documentation.", href: `${root}designs/log7.html`},
 ]
 
 export function recentLog() {
